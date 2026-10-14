@@ -1,0 +1,22 @@
+# on
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+/data/raw/
+/data/processed/
+
+# Model artifacts
+/artifacts/
+/mlruns/
+
+# Local secrets
+.env
+.env.*
+
+# OS
+.DS_Store
