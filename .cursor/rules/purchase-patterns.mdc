@@ -1,0 +1,58 @@
+---
+description: Purchase Patterns engineering standards
+alwaysApply: true
+---
+
+# Project Context
+
+Project: Purchase Patterns
+Subtitle: An End-to-End Retail Machine Learning System
+
+Dataset: UCI Online Retail II, obtained from Kaggle.
+Domain: Customer Analytics.
+
+Business goals:
+1. Analyze customer purchase behavior.
+2. Perform customer segmentation.
+3. Predict repeat purchases within the next 60 days.
+4. Support evidence-based retention targeting.
+
+# Technology
+
+- Python 3.12
+- uv for dependency management
+- SQL, DuckDB, Parquet, dbt
+- scikit-learn, XGBoost, LightGBM
+- Optuna for hyperparameter optimization
+- MLflow for experiment tracking
+- Pytest and Ruff for code quality
+
+Add dependencies only when needed.
+
+# Engineering Standards
+
+- Write clean, modular, readable Python.
+- Prefer reusable functions over notebook-only code.
+- Add type hints and docstrings.
+- Write tests for new functionality.
+- Keep changes small and focused.
+- Explain architectural decisions.
+- Do not introduce unnecessary frameworks.
+
+# Data Science Standards
+
+- Prevent data leakage.
+- Features must use only data available before prediction time.
+- The 60-day repeat-purchase target must use future transactions.
+- Keep training, validation, and test data separate.
+- Never tune hyperparameters on the final test set.
+- Do not invent model performance or business results.
+
+# Safety and Workflow
+
+- Never commit raw datasets or credentials.
+- Do not modify unrelated files.
+- Do not automatically commit or push code.
+- Present an implementation plan before large changes.
+- Run relevant tests after implementing a feature.
+- Summarize what changed and why.
