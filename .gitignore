@@ -1,13 +1,16 @@
-# on
+# Python
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+.ruff_cache/
 
 # Jupyter
 .ipynb_checkpoints/
 
 # Data
 /data/raw/
+/data/interim/
 /data/processed/
 
 # Model artifacts
