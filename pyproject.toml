@@ -32,7 +32,7 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-m 'not integration'"
+addopts = "-m 'not integration' --import-mode=importlib"
 markers = [
     "integration: slow tests that need the real dataset in data/raw (run with -m integration)",
 ]
